@@ -205,7 +205,7 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
 
 /* Hero slides: desktop and phone versions of each photo */
 .slides .sl{position:absolute;inset:0;background:var(--bg) center/cover no-repeat;background-image:var(--d);opacity:0;animation:fade 30s infinite;transform:scale(1.08)}
-@media(max-width:820px){.slides .sl{background-image:var(--m)}}
+@media(max-width:820px),(max-aspect-ratio:5/4){.slides .sl{background-image:var(--m)}}
 .slides .sl:nth-child(2){animation-delay:5s}
 .slides .sl:nth-child(3){animation-delay:10s}
 .slides .sl:nth-child(4){animation-delay:15s}
@@ -213,10 +213,11 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
 .slides .sl:nth-child(6){animation-delay:25s}
 .sl-brand{background:radial-gradient(ellipse at 50% 38%,#F3E3BD 0%,#D9BC82 38%,#A8843F 75%,#6E5424 100%)!important;display:flex;align-items:flex-start;justify-content:center}
 .sl-brand svg{width:min(640px,86vw);margin-top:max(14vh,110px)}
-@media(min-width:821px){.sl-brand{justify-content:flex-end}.sl-brand svg{margin:12vh 7vw 0 0;width:min(620px,44vw)}}
+@media(min-width:821px) and (min-aspect-ratio:5/4){.sl-brand{justify-content:flex-end}.sl-brand svg{margin:12vh 7vw 0 0;width:min(620px,44vw)}}
 
 /* Meet the Owner: photo slides aside to reveal the video */
-.owner-stage{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--gold);background:#000;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.intro-photo{width:100%}
+.owner-stage{position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--gold);background:#000;box-shadow:0 24px 60px rgba(0,0,0,.45)}
 .owner-stage .ph,.owner-stage .ov{position:absolute;inset:0;transition:transform 1s cubic-bezier(.7,0,.2,1)}
 .owner-stage .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .owner-stage .ov{transform:translateX(100%);background:#000}
@@ -386,9 +387,9 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
       <p>Outfits, jewelry and moments from the store.</p>
     </div>
     <div class="videos">
-      <div><div class="vid"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F9538110136276305&show_text=false" title="Twirling in an outfit at the store" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><div class="vid-cap">New arrivals in motion</div></div>
       <div><div class="vid"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2417587551938230&show_text=false" title="Mother and daughter showing dresses" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><div class="vid-cap">A family affair</div></div>
       <div><div class="vid"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F34286884440955902&show_text=false" title="Jewelry and bags in the store" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><div class="vid-cap">Jewelry &amp; accessories</div></div>
+      <div><div class="vid"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F9538110136276305&show_text=false" title="Twirling in an outfit at the store" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><div class="vid-cap">New arrivals in motion</div></div>
       <div><div class="vid"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1736238930570255&show_text=false" title="Showing outfits in the store" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div><div class="vid-cap">Outfits from the collection</div></div>
     </div>
     <div class="more"><a class="btn btn-line" href="https://www.facebook.com/share/1ESesKFMuJ/" target="_blank" rel="noopener">See More on Facebook</a></div>
@@ -498,7 +499,7 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
   }
   bt.addEventListener('click',function(){clearTimeout(auto);show(!st.classList.contains('show'));});
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){auto=setTimeout(function(){show(true)},4500);io.disconnect();}})},{threshold:.6});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){auto=setTimeout(function(){show(true)},6500);io.disconnect();}})},{threshold:.6});
     io.observe(st);
   }
   // Meet the Family slideshow
