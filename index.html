@@ -4,13 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Mahwish Rabbani | Pakistani Bridal, Party &amp; Casual Wear in Hicksville, NY</title>
-<meta name="description" content="Mahwish Rabbani, owner of My Wish in Hicksville, Long Island. Pakistani bridal, party and casual clothing, branded designer suits and jewelry. Over 20 years. Visit the store at 420 S Broadway.">
+<meta name="description" content="My Wish by Mahwish Rabbani in Hicksville, Long Island: Pakistani bridal lehengas, sharara, gharara, anarkali, Eid, mehndi and wedding outfits, designer suits and kundan jewelry. 20+ years. 420 S Broadway.">
+<link rel="canonical" href="https://mywishcouture1-commits.github.io/mahwishrabbani/">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="US-NY">
+<meta name="geo.placename" content="Hicksville, New York">
 <meta property="og:title" content="Mahwish Rabbani | Pakistani Bridal &amp; Party Wear, Hicksville NY">
 <meta property="og:description" content="Bridal, party and casual Pakistani clothing, designer suits and jewelry. A large collection in store at 420 S Broadway, Hicksville.">
-<meta property="og:image" content="photo-store-sign.jpg">
+<meta property="og:image" content="https://mywishcouture1-commits.github.io/mahwishrabbani/hero-1-d.jpg">
+<meta property="og:url" content="https://mywishcouture1-commits.github.io/mahwishrabbani/">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ClothingStore",
+  "name":"My Wish by Mahwish Rabbani",
+  "alternateName":["My Wish","My Wish Collection","Mahwish Rabbani","My Wish Couture"],
+  "description":"Pakistani bridal, party and casual wear, branded designer suits and jewelry in Hicksville, Long Island. Bridal lehengas, sharara, gharara, anarkali, mehndi, nikah, walima and Eid outfits.",
+  "url":"https://mywishcouture1-commits.github.io/mahwishrabbani/",
+  "image":"https://mywishcouture1-commits.github.io/mahwishrabbani/hero-1-d.jpg",
+  "telephone":"+1-516-605-5999",
+  "email":"mywish7866@yahoo.com",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"420 S Broadway","addressLocality":"Hicksville","addressRegion":"NY","postalCode":"11801","addressCountry":"US"},
+  "areaServed":["Hicksville","Long Island","Nassau County","Queens","New York"],
+  "founder":{"@type":"Person","name":"Mahwish Rabbani"},
+  "sameAs":["https://www.facebook.com/share/1ESesKFMuJ/","https://www.instagram.com/mywish7866/","https://www.tiktok.com/@mahwishrabbani","https://mywishcouture1-commits.github.io/mywishcouture/"],
+  "keywords":"Pakistani clothes Long Island, Pakistani bridal dress, lehenga, sharara, gharara, anarkali, Eid outfits, mehndi dress, walima dress, nikah dress, shalwar kameez, lawn suits, designer Pakistani suits, kundan jewelry, jhumka, Desi clothing store Hicksville"
+}
+</script>
 <style>
 :root{
   --bg:#120B10; --bg2:#1B1118; --card:#23161F;
@@ -45,6 +70,8 @@ img{max-width:100%;display:block}
 .top-links a:hover{color:var(--gold)}
 .top-call{border:1px solid var(--gold);padding:.45rem .95rem;color:var(--gold-lt)!important;white-space:nowrap}
 @media(max-width:760px){.top-links a:not(.top-call){display:none}}
+.logo{white-space:nowrap}
+@media(max-width:420px){.logo{font-size:1.15rem}.top-call{padding:.4rem .7rem;font-size:.82rem}}
 
 /* Hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
@@ -167,7 +194,61 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
 .wa-float{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom));z-index:60;background:#1F8A4C;color:#fff;padding:.8rem 1.15rem;font-size:.9rem;font-weight:500;box-shadow:0 8px 24px rgba(0,0,0,.4)}
 .wa-float:hover{color:#fff;background:#18703D}
 
+
+/* Keyword ribbon under the top bar */
+.ribbon{position:absolute;left:0;right:0;top:100%;overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);background:rgba(60,10,22,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ribbon-track{display:inline-flex;animation:ribbon 70s linear infinite;padding:.32rem 0}
+.ribbon-track span{font-size:.78rem;letter-spacing:.06em;color:var(--gold-lt);padding:0 .9rem;position:relative}
+.ribbon-track span+span::before{content:"";position:absolute;left:-.2rem;top:50%;width:.3rem;height:.3rem;background:var(--gold);transform:translateY(-50%) rotate(45deg)}
+.ribbon-track [lang=ur]{font-size:.9rem;letter-spacing:0}
+@keyframes ribbon{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Hero slides: desktop and phone versions of each photo */
+.slides .sl{position:absolute;inset:0;background:var(--bg) center/cover no-repeat;background-image:var(--d);opacity:0;animation:fade 30s infinite;transform:scale(1.08)}
+@media(max-width:820px){.slides .sl{background-image:var(--m)}}
+.slides .sl:nth-child(2){animation-delay:5s}
+.slides .sl:nth-child(3){animation-delay:10s}
+.slides .sl:nth-child(4){animation-delay:15s}
+.slides .sl:nth-child(5){animation-delay:20s}
+.slides .sl:nth-child(6){animation-delay:25s}
+.sl-brand{background:radial-gradient(ellipse at 50% 38%,#F3E3BD 0%,#D9BC82 38%,#A8843F 75%,#6E5424 100%)!important;display:flex;align-items:flex-start;justify-content:center}
+.sl-brand svg{width:min(640px,86vw);margin-top:max(14vh,110px)}
+@media(min-width:821px){.sl-brand{justify-content:flex-end}.sl-brand svg{margin:12vh 7vw 0 0;width:min(620px,44vw)}}
+
+/* Meet the Owner: photo slides aside to reveal the video */
+.owner-stage{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--gold);background:#000;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.owner-stage .ph,.owner-stage .ov{position:absolute;inset:0;transition:transform 1s cubic-bezier(.7,0,.2,1)}
+.owner-stage .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.owner-stage .ov{transform:translateX(100%);background:#000}
+.owner-stage .ov iframe{width:100%;height:100%;border:0}
+.owner-stage.show .ph{transform:translateX(-100%)}
+.owner-stage.show .ov{transform:translateX(0)}
+.owner-toggle{position:absolute;left:50%;bottom:1rem;transform:translateX(-50%);z-index:3;background:rgba(18,11,16,.78);border:1px solid var(--gold);color:var(--gold-lt);font:500 .88rem 'Jost',sans-serif;padding:.55rem 1.1rem;cursor:pointer}
+.owner-toggle:hover{background:rgba(18,11,16,.95)}
+.owner-stage.show .owner-toggle{top:1rem;bottom:auto}
+
+/* Occasions text */
+.occasions{max-width:760px;margin:2.5rem auto 0;text-align:center}
+.occasions p{color:var(--muted)}
+.occasions strong{color:var(--gold-lt);font-weight:500}
+
+/* Meet the Family slideshow */
+.fam{max-width:460px;margin:0 auto;position:relative}
+.fam-stage{position:relative;aspect-ratio:4/5;border:1px solid var(--gold);overflow:hidden;background:#000;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.fam-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 6s ease}
+.fam-stage img.on{opacity:1;transform:scale(1)}
+.fam-nav{position:absolute;top:50%;transform:translateY(-50%);width:2.8rem;height:2.8rem;border:1px solid var(--gold);background:rgba(18,11,16,.7);color:var(--gold-lt);font-size:1.3rem;cursor:pointer;z-index:2}
+.fam-nav:hover{background:rgba(18,11,16,.95)}
+.fam-prev{left:-1.4rem}.fam-next{right:-1.4rem}
+@media(max-width:560px){.fam-prev{left:.5rem}.fam-next{right:.5rem}}
+.fam-dots{display:flex;justify-content:center;gap:.55rem;margin-top:1.2rem}
+.fam-dots button{width:.6rem;height:.6rem;padding:0;border:1px solid var(--gold);background:transparent;transform:rotate(45deg);cursor:pointer}
+.fam-dots button.on{background:var(--gold)}
+
 @media(prefers-reduced-motion:reduce){
+  .slides .sl{animation:none;opacity:0;transform:none}
+  .slides .sl:first-child{opacity:1}
+  .ribbon-track{animation:none}
   .slides img{animation:none;opacity:0;transform:none}
   .slides img:first-child{opacity:1}
   *{transition:none!important;scroll-behavior:auto!important}
@@ -184,17 +265,32 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
     <a href="#visit">Visit</a>
     <a href="tel:5166055999" class="top-call">Call (516) 605-5999</a>
   </nav>
+  <div class="ribbon"><div class="ribbon-track"><span>Bridal Lehenga</span><span>Sharara</span><span>Gharara</span><span>Anarkali</span><span>Mehndi Outfits</span><span>Nikah Dresses</span><span>Baraat</span><span>Walima</span><span lang="ur">عید مبارک</span><span>Eid ul Fitr</span><span>Eid ul Adha</span><span>Chand Raat</span><span>Shaadi Season</span><span>Party &amp; Formal Wear</span><span>Shalwar Kameez</span><span>Lawn Suits</span><span lang="ur">شادی</span><span lang="ur">مہندی</span><span>Designer Pakistani Suits</span><span>Kundan Jewelry</span><span>Jhumkas &amp; Tikkas</span><span>Bangles</span><span>Dupattas</span><span>Sarees</span><span>Hicksville, Long Island</span><span lang="ur">دلہن کا لباس</span><span aria-hidden="true">Bridal Lehenga</span><span aria-hidden="true">Sharara</span><span aria-hidden="true">Gharara</span><span aria-hidden="true">Anarkali</span><span aria-hidden="true">Mehndi Outfits</span><span aria-hidden="true">Nikah Dresses</span><span aria-hidden="true">Baraat</span><span aria-hidden="true">Walima</span><span aria-hidden="true" lang="ur">عید مبارک</span><span aria-hidden="true">Eid ul Fitr</span><span aria-hidden="true">Eid ul Adha</span><span aria-hidden="true">Chand Raat</span><span aria-hidden="true">Shaadi Season</span><span aria-hidden="true">Party &amp; Formal Wear</span><span aria-hidden="true">Shalwar Kameez</span><span aria-hidden="true">Lawn Suits</span><span aria-hidden="true" lang="ur">شادی</span><span aria-hidden="true" lang="ur">مہندی</span><span aria-hidden="true">Designer Pakistani Suits</span><span aria-hidden="true">Kundan Jewelry</span><span aria-hidden="true">Jhumkas &amp; Tikkas</span><span aria-hidden="true">Bangles</span><span aria-hidden="true">Dupattas</span><span aria-hidden="true">Sarees</span><span aria-hidden="true">Hicksville, Long Island</span><span aria-hidden="true" lang="ur">دلہن کا لباس</span></div></div>
 </header>
 
 <!-- HERO: background photos fade one after another. The first photo shows first. -->
 <section class="hero" id="top" style="padding:0">
   <div class="slides" aria-hidden="true">
-    <img src="photo-store-sign.jpg" alt="" class="sign">
-    <img src="photo-mother-daughter.jpg" alt="">
-    <img src="photo-youngest.jpg" alt="" style="object-position:center 15%">
-    <img src="photo-daughter-blue.jpg" alt="">
-    <img src="photo-owner.jpg" alt="">
-    <img src="photo-daughter-event.jpg" alt="">
+    <div class="sl" style="--d:url(hero-1-d.jpg);--m:url(hero-1-m.jpg)"></div>
+    <div class="sl" style="--d:url(hero-2-d.jpg);--m:url(hero-2-m.jpg)"></div>
+    <div class="sl" style="--d:url(hero-3-d.jpg);--m:url(hero-3-m.jpg)"></div>
+    <div class="sl" style="--d:url(hero-4-d.jpg);--m:url(hero-4-m.jpg)"></div>
+    <div class="sl" style="--d:url(hero-5-d.jpg);--m:url(hero-5-m.jpg)"></div>
+    <div class="sl sl-brand"><svg viewBox="0 0 600 380" role="img" aria-label="My Wish Collection">
+      <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#A8843F"/><stop offset=".45" stop-color="#F6E6BC"/><stop offset=".7" stop-color="#D8B46A"/><stop offset="1" stop-color="#A8843F"/></linearGradient></defs>
+      <ellipse cx="300" cy="190" rx="292" ry="182" fill="none" stroke="#F3E3BD" stroke-width="3" opacity=".8"/>
+      <ellipse cx="300" cy="190" rx="276" ry="168" fill="#120B10" stroke="url(#gg)" stroke-width="5"/>
+      <ellipse cx="300" cy="190" rx="262" ry="155" fill="none" stroke="#D8B46A" stroke-width="1" opacity=".6"/>
+      <g fill="none" stroke="url(#gg)" stroke-width="3" stroke-linecap="round">
+        <path d="M300 92c-18-22-52-24-70-8-12 11-9 30 6 30 12 0 14-14 5-17"/><path d="M300 92c18-22 52-24 70-8 12 11 9 30-6 30-12 0-14-14-5-17"/>
+        <path d="M150 112c40 0 70 4 110-6M450 112c-40 0-70 4-110-6"/>
+        <path d="M300 288c-18 22-52 24-70 8-12-11-9-30 6-30 12 0 14 14 5 17"/><path d="M300 288c18 22 52 24 70 8 12-11 9-30-6-30-12 0-14 14-5 17"/>
+        <path d="M150 268c40 0 70-4 110 6M450 268c-40 0-70-4-110 6"/>
+      </g>
+      <path d="M300 80l7 12-7 12-7-12z M300 276l7 12-7 12-7-12z" fill="#F3E3BD"/>
+      <text x="300" y="182" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="66" fill="url(#gg)" letter-spacing="2">MY WISH</text>
+      <text x="300" y="248" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="54" fill="url(#gg)" letter-spacing="3">COLLECTION</text>
+    </svg></div>
   </div>
   <div class="hero-inner">
     <div class="eyebrow">Bridal &middot; Party &middot; Casual &middot; Designer</div>
@@ -219,7 +315,13 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
 
 <section class="band-ruby">
   <div class="wrap intro">
-    <div class="intro-photo"><img src="photo-mahwish.jpg" alt="Mahwish Rabbani, owner of My Wish"></div>
+    <div class="intro-photo">
+      <div class="owner-stage" id="ownerStage">
+        <div class="ph"><img src="owner.jpg" alt="Mahwish Rabbani, owner of My Wish in Hicksville, wearing a white and gold Pakistani outfit with a dupatta"></div>
+        <div class="ov" data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1739935893793294&show_text=false"></div>
+        <button class="owner-toggle" type="button" id="ownerToggle">&#9654; Watch Mahwish</button>
+      </div>
+    </div>
     <div>
       <div class="eyebrow">Meet the Owner</div>
       <h2>Personal style, personal service</h2>
@@ -250,6 +352,11 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
       <div class="tile s"><h3>Party &amp; Formal</h3><p>Chiffon and organza formals, anarkalis, sarees and embellished eveningwear.</p></div>
       <div class="tile e"><h3>Casual</h3><p>Lawn, cambric and straight-cut suits for everyday elegance.</p></div>
       <div class="tile g"><h3>Jewelry</h3><p>Kundan sets, jhumkas, tikkas, bangles and bridal statement pieces.</p></div>
+    </div>
+    <div class="occasions">
+      <h3>Dressed for every occasion</h3>
+      <p>From the <strong>mehndi</strong> and <strong>mayun</strong> to the <strong>nikah</strong>, <strong>baraat</strong> and <strong>walima</strong>, Mahwish helps brides and their families find the right bridal lehenga, sharara or gharara. For <strong>Eid ul Fitr</strong>, <strong>Eid ul Adha</strong> and <strong>Chand Raat</strong>, choose from festive shalwar kameez, anarkalis and embroidered lawn suits. Guests will find party wear for engagements, dholki nights and every celebration, finished with kundan sets, jhumkas, tikkas and bangles.</p>
+      <p>My Wish carries Pakistani clothing for women and girls, branded designer suits and ready-to-wear, with personal help on sizing in store.</p>
     </div>
     <div class="instore"><p>Everything you see here, and much more, is available in store at 420 S Broadway, Hicksville.</p></div>
   </div>
@@ -295,24 +402,36 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
       <h2>Fun from the store floor</h2>
       <p>The personality behind My Wish.</p>
     </div>
-    <div class="videos three">
-      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7678337156187819294?music_info=0&description=0&rel=0" title="Mahwish dancing and singing in the store" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Dancing in the store</div></div>
-      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7617292709732060447?music_info=0&description=0&rel=0" title="Showing outfits in the store" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Styling the collection</div></div>
-      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7619571514882411807?music_info=0&description=0&rel=0" title="Mahwish showing the store" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">A tour of the store</div></div>
+    <div class="videos">
+      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7678337156187819294?music_info=0&description=0&rel=0" title="Mahwish dancing in the store" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Dancing in the store</div></div>
+      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7617292709732060447?music_info=0&description=0&rel=0" title="Mahwish and a friend styling outfits from the collection" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Styling the collection</div></div>
+      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7686970037697088799?music_info=0&description=0&rel=0" title="Mahwish showing a bag and products at My Wish" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Bags &amp; new products</div></div>
+      <div><div class="vid"><iframe src="https://www.tiktok.com/player/v1/7679979955115117854?music_info=0&description=0&rel=0" title="Mahwish singing in the store in Urdu" allow="fullscreen" loading="lazy"></iframe></div><div class="vid-cap">Singing in the store</div></div>
     </div>
     <div class="more"><a class="btn btn-line" href="https://www.tiktok.com/@mahwishrabbani" target="_blank" rel="noopener">See More on TikTok</a></div>
   </div>
 </section>
 
-<section class="band-ruby">
+<section class="band-ruby" id="family">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">On Instagram</div>
+      <div class="eyebrow">Meet the Family</div>
       <h2>The family behind My Wish</h2>
       <p>Mahwish and her daughters, and moments from the store.</p>
     </div>
-    <div class="ig-wrap">
-      <div class="vid"><iframe src="https://www.instagram.com/reel/DWT8A3mDx8c/embed" title="My Wish family and store on Instagram" allowfullscreen loading="lazy" scrolling="no"></iframe></div>
+    <div class="fam" id="fam">
+      <div class="fam-stage">
+        <img src="family-1.jpg" alt="The My Wish Collection sign at the store in Hicksville with Mahwish Rabbani" class="on">
+        <img src="family-2.jpg" alt="Mahwish Rabbani with her daughters in front of the My Wish Collection sign" loading="lazy">
+        <img src="family-3.jpg" alt="Mahwish Rabbani with family and a bride in a yellow mehndi outfit at My Wish" loading="lazy">
+        <img src="family-4.jpg" alt="Mahwish Rabbani's daughter in a gold lace outfit at a celebration" loading="lazy">
+        <img src="family-5.jpg" alt="Mahwish Rabbani's daughter in a gold embroidered outfit at the store" loading="lazy">
+        <img src="family-6.jpg" alt="Mahwish Rabbani's daughter in a black dress, photo by Stanley Paul Photography" loading="lazy">
+        <img src="family-7.jpg" alt="Mahwish Rabbani and her daughter inside the My Wish store" loading="lazy">
+      </div>
+      <button class="fam-nav fam-prev" type="button" aria-label="Previous photo">&#8249;</button>
+      <button class="fam-nav fam-next" type="button" aria-label="Next photo">&#8250;</button>
+      <div class="fam-dots"></div>
     </div>
     <div class="more"><a class="btn btn-line" href="https://www.instagram.com/mywish7866/" target="_blank" rel="noopener">Follow on Instagram</a></div>
   </div>
@@ -363,10 +482,35 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
       <a href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp</a>
     </div>
     <p>420 S Broadway, Hicksville, NY 11801 &middot; <a href="tel:5166055999">(516) 605-5999</a> &middot; <a href="mailto:mywish7866@yahoo.com">mywish7866@yahoo.com</a></p>
+    <p class="fine">Serving Hicksville, Levittown, Westbury, Jericho, Syosset, Hempstead, Queens and all of Long Island.</p>
     <p class="fine">&copy; 2026 Mahwish Rabbani &middot; My Wish. All rights reserved.</p>
   </div>
 </footer>
 
 <a class="wa-float" href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+(function(){
+  // Meet the Owner: photo slides away to show the video
+  var st=document.getElementById('ownerStage'),bt=document.getElementById('ownerToggle'),ov=st.querySelector('.ov'),auto;
+  function show(on){
+    if(on&&!ov.firstChild){var f=document.createElement('iframe');f.src=ov.dataset.src;f.title='Mahwish Rabbani showing jewelry and an outfit';f.allow='autoplay; encrypted-media; picture-in-picture; web-share';f.allowFullscreen=true;ov.appendChild(f);}
+    st.classList.toggle('show',on);bt.innerHTML=on?'&#8592; Back to photo':'&#9654; Watch Mahwish';
+  }
+  bt.addEventListener('click',function(){clearTimeout(auto);show(!st.classList.contains('show'));});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){auto=setTimeout(function(){show(true)},4500);io.disconnect();}})},{threshold:.6});
+    io.observe(st);
+  }
+  // Meet the Family slideshow
+  var fam=document.getElementById('fam'),imgs=fam.querySelectorAll('.fam-stage img'),dots=fam.querySelector('.fam-dots'),i=0,t;
+  imgs.forEach(function(_,n){var d=document.createElement('button');d.type='button';d.setAttribute('aria-label','Photo '+(n+1));if(!n)d.className='on';d.onclick=function(){go(n)};dots.appendChild(d);});
+  function go(n){imgs[i].classList.remove('on');dots.children[i].classList.remove('on');i=(n+imgs.length)%imgs.length;imgs[i].classList.add('on');dots.children[i].classList.add('on');clearInterval(t);t=setInterval(function(){go(i+1)},5000);}
+  fam.querySelector('.fam-prev').onclick=function(){go(i-1)};
+  fam.querySelector('.fam-next').onclick=function(){go(i+1)};
+  var x0=null;fam.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  fam.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null;});
+  t=setInterval(function(){go(i+1)},5000);
+})();
+</script>
 </body>
 </html>
