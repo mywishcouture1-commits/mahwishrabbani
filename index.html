@@ -221,7 +221,8 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
 .owner-stage .ph,.owner-stage .ov{position:absolute;inset:0;transition:transform 1s cubic-bezier(.7,0,.2,1)}
 .owner-stage .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .owner-stage .ov{transform:translateX(100%);background:#000}
-.owner-stage .ov iframe{width:100%;height:100%;border:0}
+.owner-stage .ov{display:flex;align-items:center;justify-content:center}
+.owner-stage .ov iframe{border:0;display:block;max-width:100%}
 .owner-stage.show .ph{transform:translateX(-100%)}
 .owner-stage.show .ov{transform:translateX(0)}
 .owner-toggle{position:absolute;left:50%;bottom:1rem;transform:translateX(-50%);z-index:3;background:rgba(18,11,16,.78);border:1px solid var(--gold);color:var(--gold-lt);font:500 .88rem 'Jost',sans-serif;padding:.55rem 1.1rem;cursor:pointer}
@@ -494,7 +495,7 @@ footer{padding:3rem 0 2rem;text-align:center;color:var(--muted);font-size:.92rem
   // Meet the Owner: photo slides away to show the video
   var st=document.getElementById('ownerStage'),bt=document.getElementById('ownerToggle'),ov=st.querySelector('.ov'),auto;
   function show(on){
-    if(on&&!ov.firstChild){var f=document.createElement('iframe');f.src=ov.dataset.src;f.title='Mahwish Rabbani showing jewelry and an outfit';f.allow='autoplay; encrypted-media; picture-in-picture; web-share';f.allowFullscreen=true;ov.appendChild(f);}
+    if(on&&!ov.firstChild){var H=Math.round(st.clientHeight),W=Math.round(H*9/16);if(W>st.clientWidth){W=Math.round(st.clientWidth);H=Math.round(W*16/9);}var f=document.createElement('iframe');f.width=W;f.height=H;f.style.width=W+'px';f.style.height=H+'px';f.src=ov.dataset.src+'&width='+W+'&height='+H;f.title='Mahwish Rabbani showing jewelry and an outfit';f.allow='autoplay; encrypted-media; picture-in-picture; web-share';f.allowFullscreen=true;ov.appendChild(f);}
     st.classList.toggle('show',on);bt.innerHTML=on?'&#8592; Back to photo':'&#9654; Watch Mahwish';
   }
   bt.addEventListener('click',function(){clearTimeout(auto);show(!st.classList.contains('show'));});
